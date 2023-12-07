@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Organic store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link  rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div>
+    <!-- Navbar -->
+    <div class="container">
+    <div class="d-flex flex-row mb-3 justify-content-evenly bg-white  align-items-center">
+        <div class="p-2">
+            <a href="index.html"><img src="images/organic-store-logo5.svg" class="img-fluid"></a>
+        </div>
+        <div class="p-2">
+            <a href="shop.html">Everything</a>
+        </div>
+        <div class="p-2">
+            <a href="grocery.html">Groceries</a>
+        </div>
+        <div class="p-2 flex-grow-1">
+            <a href="juice.html">Juice</a>
+        </div>
+        <div class="p-2">
+            <a href="about.html">About</a>
+        </div>
+        <div class="p-2">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="p-2">
+            <button class="btn btn-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-basket-fill text-success" viewBox="0 0 16 16">
+                <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+            </svg><span class="badge rounded-circle text-bg-success">0</span></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Shoping Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div class="cartitems1">
+
+    </div>
+    <div class="subtotal1">
+
+    </div>
+    <div><a href="shop.html"><button type="button" class="btn btn1 text-white btn-success btn-lg mt-3" >continue Shopping</button></a></div>
+</div>
+</div>
+        </div>
+        <div class="p-2">
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg></a>
+        </div>
+    </div>
+    </div>
+
+
+
+            <!-- Shop -->
+
+            <div class="conatiner-fluid">
+                <div class="row bg-light p-4">
+                    <div class="col-3 border-end">
+                        <form class="d-flex mt-4" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search Products....." aria-label="Search">
+                            <button class="btn btn-success" type="submit">&gt;</button>
+                        </form>
+                        <h4 class="fw-bold mt-4">Filter by Rice</h4>
+                        <input type="range" class="form-range" id="CustomerRange1" min="0" max="0" maxlength="100">
+                        <div class="d-flex justify-content-end p-2 gap-2" >
+                            <input type="text" class="form-control w-25 p-2" placeholder="£10" aria-label="First name">
+                            <input type="text" class="form-control w-25 p-2" placeholder="£40" aria-label="Last name">
+                        </div>
+                        <div class="mt-4" >
+                            <a href="#" class="text-success">Groceries</a>(10)<br>
+                            <a href="#" class="text-success">Juice</a>(9)
+
+                        </div>
+                        <div class="card border-0 mt-4" style="width: 18rem;">
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 btn1 border border-light rounded-circle">
+                    <span>Sale!</span>
+                  </span>
+                    
+                            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-400x400.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-light">
+                            
+                            <h5 class="card-title text-success">Natural Extracted Edible Oil</h5>
+                           
+                            <h6>£25.00</h6>
+                        </div>
+                        </div>
+                        <div class="card border-0 mt-4" style="width: 18rem;">
+                            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-400x400.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center bg-light">
+                              
+                                <h5 class="card-title text-success">Hand Sanitizer</h5>
+                                
+                                <h6>£15.00</h6>
+                            </div>
+                          </div>
+
+                          <div class="card border-0 mt-4" style="width: 18rem;">
+                            <img src="images/coffee-asorted-300x300.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center bg-light">
+                              
+                                <h5 class="card-title text-success">Wheat Organic Farm</h5>
+                                
+                                <h6>£32.00</h6>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="container">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-4 ms-5">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page" style="font-size: 20px;">Shop</li>
+                        </ol>
+                      </nav>
+                      <h1 class="text-success display-3 fw-bold ms-5">Shop</h1>
+                      <div class="d-flex flex-row mb-3 mt-5">
+                        <div class="p-2 fs-5 flex-grow-1"><p>Showing 10-12 of 12 results</p></div>
+                        <div class="p-2 ">
+                          <select class="form-select fs-5 bg-light border-0" aria-label="Default select example">
+                          <option selected>Default Sorting</option>
+                          <option value="1">Sort by Popularity</option>
+                          <option value="2">Sort by average rating</option>
+                          <option value="3">Sort by Latest</option>
+                          <option value="4">Sort by Price: low to high</option>
+                          <option value="5">Sort by Price: high to low</option>
+                        </select></div>
+                     
+                      </div>
+                    </div>
+                    <!-- products -->
+                    <div class="card-group elements1 gap-4 mb-3">
+                        
+                      </div>
+                    <!-- pagination  -->
+                    <nav aria-label="Page navigation example mt-5">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link text-success" href="shop.html"><i class="fa-solid fa-arrow-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="shop.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="2.html">2</a></li>
+                        <li class="page-item"><a class="page-link text-success" href="2.html"><i class="fa-solid fa-arrow-right"></i></a></li>
+                      </ul>
+                    </nav>
+                    </div>
+                </div>
+            </div>
+    
+            
+</body>
+</html>
+
+<script  src="products1.js" ></script>

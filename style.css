@@ -1,0 +1,19 @@
+a:link,a:visited
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+::selection{
+    background-color: #6a9739;
+}
+*{
+    font-family: 'Merriweather',serif;
+}
+.btn1{
+    background-color: #6a9739;
+}
+.cardback:hover{
+    opacity: 0.5;
+}
+
